@@ -11,10 +11,6 @@ Try the web app here:
 
 https://phishing-website-detector-dtaykmafvcejv8ujiuxr8y.streamlit.app/
 
-This project uses machine learning to classify websites as legitimate or phishing based on URL features.
-
-The project uses the PhiUSIIL Phishing URL Dataset and a Random Forest classifier.
-
 ## Model
 
 The final web app uses a Random Forest model with 100 trees.
