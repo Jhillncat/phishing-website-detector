@@ -1,6 +1,11 @@
 # Phishing Website Detector
 
 ## About
+## Live Demo
+
+Try the web app here:
+
+https://phishing-website-detector-dtaykmafvcejv8ujiuxr8y.streamlit.app/
 
 This project uses machine learning to classify websites as legitimate or phishing based on URL features.
 
@@ -12,28 +17,33 @@ The final web app uses a Random Forest model with 100 trees.
 
 The model was trained using an 80/20 stratified train-test split with `random_state=42`.
 
-The web app uses 11 URL-based features:
+The web app uses 16 URL-based features:
 
+- URLLength
 - DomainLength
 - IsDomainIP
+- CharContinuationRate
 - TLDLength
 - NoOfSubDomain
 - HasObfuscation
 - NoOfObfuscatedChar
 - ObfuscationRatio
+- NoOfLettersInURL
+- LetterRatioInURL
 - NoOfEqualsInURL
 - NoOfQMarkInURL
 - NoOfAmpersandInURL
+- NoOfOtherSpecialCharsInURL
 - IsHTTPS
 
 ## Results
 
 The final URL-based model achieved:
 
-- Accuracy: 90.35%
-- Precision: 95.61%
-- Recall: 81.18%
-- F1 Score: 87.86%
+- Accuracy: 99.68%
+- Precision: 99.83%
+- Recall: 99.42%
+- F1 Score: 99.63%
 
 ## How to Run
 
