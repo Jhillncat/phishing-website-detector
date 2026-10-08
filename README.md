@@ -48,6 +48,36 @@ The confusion matrix was:
 [[16389, 3800],
  [  752, 26218]] 
 ```
+
+## Understanding the Results
+
+### Phishing Probability
+The phishing probability is the Random Forest model's estimated probability
+that the submitted URL belongs to the phishing class. It ranges from 0% to 100%.
+
+### Risk Level
+- **Low:** phishing probability below 40%
+- **Medium:** phishing probability from 40% to below 70%
+- **High:** phishing probability of 70% or higher
+
+### Model Prediction
+The app classifies the submitted URL as either:
+- **Legitimate**
+- **Phishing**
+
+These predictions and probabilities are model estimates and should not be
+treated as a guarantee that a website is safe or malicious.
+
+### Model Evaluation Metrics
+
+- **Accuracy:** percentage of all test examples classified correctly.
+- **Precision:** percentage of URLs predicted as phishing that were actually phishing.
+- **Recall:** percentage of actual phishing URLs that the model successfully detected.
+- **F1-score:** combines precision and recall into one metric.
+
+For this project, recall is especially important because a false negative means
+a phishing website was incorrectly classified as legitimate.
+
 ## How to Run
 
 1. Clone this repository.
@@ -61,6 +91,16 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+## How to Analyze Another URL
+
+1. Enter a website URL in the input box.
+2. Click **Analyze Website**.
+3. Review the prediction, phishing probability, and risk level.
+4. To test another website, delete the current URL from the input box.
+5. Enter the new URL and click **Analyze Website** again.
+6. The app will run a new analysis using the new URL.
+   
 ## Project Notebook
 
 The full model development and evaluation process was completed in Google Colab.
