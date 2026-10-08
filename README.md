@@ -97,8 +97,8 @@ streamlit run app.py
 1. Enter a website URL in the input box.
 2. Click **Analyze Website**.
 3. Review the prediction, phishing probability, and risk level.
-4. To test another website, delete the current URL from the input box.
-5. Enter the new URL and click **Analyze Website** again.
+4. To test another website, click Clear URL or replace the current URL.
+5. Enter the new URL and click Analyze Website again.
 6. The app will run a new analysis using the new URL.
    
 ## Project Notebook
