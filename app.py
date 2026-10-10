@@ -144,9 +144,6 @@ if analyze_button:
 
             phishing_index = list(model.classes_).index(0)
             phishing_probability = probabilities[phishing_index]
-            st.write("Debug - Model classes:", model.classes_)
-            st.write("Debug - All probabilities:", probabilities)
-            st.write("Debug - Raw phishing probability:", phishing_probability)
 
             st.subheader("Analysis Result")
 
