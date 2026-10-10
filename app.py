@@ -86,6 +86,20 @@ st.info(
     "This application uses a Random Forest classifier trained "
     "on URL-based features from the PhiUSIIL phishing URL dataset."
 )
+with st.expander("Important: Model Limitations"):
+    st.write(
+        "This application is a student research prototype that uses "
+        "a baseline machine learning model trained on URL-based features. "
+        "Predictions are estimates and may include false positives "
+        "(legitimate websites incorrectly flagged as phishing) and "
+        "false negatives (phishing websites incorrectly classified as "
+        "legitimate). Because the model analyzes URL characteristics "
+        "rather than fully verifying a website's content, reputation, "
+        "or security, results should not be treated as a definitive "
+        "security assessment. Always use caution when visiting unfamiliar "
+        "websites and never enter sensitive information based solely on "
+        "this tool's prediction."
+    )
 
 
 # explain how to use the app
