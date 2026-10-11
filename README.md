@@ -38,7 +38,7 @@ The final URL-based model achieved:
 - Accuracy: 90.35%
 - Precision: 95.61%
 - Recall: 81.18%
-- F1 Score: 87.86%
+- F1 Score: 87.81%%
 
 The model was evaluated on a held-out test set using the same 80/20 stratified split.
 
